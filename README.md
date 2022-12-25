@@ -14,7 +14,7 @@ Focuses on Backend only
 
 
 ## Linked:
-Add your linkedin account
+https://www.linkedin.com/in/saadnafie/
 
 ## What is Expected from you:
 - Apply OOP and SOLID principles as much you can.
@@ -22,3 +22,21 @@ Add your linkedin account
 - Write commands to run the application
 - Add API documentation
 - Code quality, linting, and naming convention.
+
+
+## Steps to run the application:
+1. download project from github
+2. open terminal and run command > npm install to download node modules and required dependancies (packages)
+3. to start server run command > nodemon index
+4. the server link should be http://localhost:5000/
+5. for running API download postman collection attached here
+
+## Postman collection File
+
+
+[voucher pool.postman_collection.zip](https://github.com/saadnafie/voucher-pool-task/files/10299352/voucher.pool.postman_collection.zip)
+
+
+
+
+
