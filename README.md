@@ -43,13 +43,13 @@ https://www.linkedin.com/in/saadnafie/
 ## Admin Part:
 
 1. API enable admin Generate Voucher Code for customer (discount by value or percentage)
-method: POST
-URL: http://localhost:5000/api/voucher
-Parameters:
-    "customer_id": 2,
-    "voucher_type": 1, //1: by percentage, 2: by value
-    "voucher_value": 20,
-    "expiration_date": "02-15-2023"
+- method: POST
+- URL: http://localhost:5000/api/voucher
+- Parameters:
+    1. "customer_id": 2,
+    2. "voucher_type": 1, //1: by percentage, 2: by value
+    3. "voucher_value": 20,
+    4. "expiration_date": "02-15-2023"
 
 
 
