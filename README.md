@@ -23,6 +23,8 @@ https://www.linkedin.com/in/saadnafie/
 - Add API documentation
 - Code quality, linting, and naming convention.
 
+___________________________________________________________________________________________
+___________________________________________________________________________________________
 
 # Steps to run the application:
 
@@ -77,5 +79,25 @@ ________________________________________________________________________________
 - Example: http://localhost:5000/api/confirm_voucher_usage/63a77bcc214c3e4f987ccdee
 
 
+
+___________________________________________________________________________________________
+
+## Database: MongoDB [https://cloud.mongodb.com/]
+
+- Database name: voucher-pool
+- Collection: vouchers
+- Document:
+1. {"_id":{"$oid":"63a77bcc214c3e4f987ccdee"},
+2. "customer_id":{"$numberInt":"1"},
+3. "voucher_type":{"$numberInt":"2"},
+4. "voucher_value":{"$numberInt":"300"},
+5. "expiration_date":{"$date":{"$numberLong":"1676412000000"}},
+6. "use_date":{"$date":{"$numberLong":"1671931085085"}},
+7. "voucher_code":{"$numberInt":"1130541"},
+8. "createdAt":{"$date":{"$numberLong":"1671920588463"}},
+9. "updatedAt":{"$date":{"$numberLong":"1671931085086"}},
+10. 
+
+![image](https://user-images.githubusercontent.com/19381799/209455487-8fac0df0-15c9-4306-b032-4cb09509c223.png)
 
 
