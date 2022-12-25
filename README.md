@@ -65,7 +65,7 @@ ________________________________________________________________________________
 
 
 1. API check specific customer voucher Code valid or not and get discount value or percentage
- - method: GET
+ - method: POST
  - URL: http://localhost:5000/api/apply_voucher
 - Parameters: 
     1. "customer_id": 1,
