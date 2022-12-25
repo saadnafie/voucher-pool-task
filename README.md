@@ -40,7 +40,7 @@ https://www.linkedin.com/in/saadnafie/
 
 # API Documnetation
 
-##Admin Part:
+## Admin Part:
 
 1. API enable admin Generate Voucher Code for customer (discount by value or percentage)
 method: POST
@@ -54,27 +54,27 @@ Parameters:
 
 
 2. API show admin all customers with vouchers and date of use
-method: GET
-URL: http://localhost:5000/api/voucher
-return customers with vouchers and date of use
+- method: GET
+- URL: http://localhost:5000/api/voucher
+- return customers with vouchers and date of use
 ___________________________________________________________________________________________
 
-##Customer Part:
+## Customer Part:
 
 
 1. API check specific customer voucher Code valid or not and get discount value or percentage
-method: GET
-URL: http://localhost:5000/api/apply_voucher
-Parameters: 
-    "customer_id": 1,
-    "voucher_code": 1130541,
-    "order_total_price": 1000
-return [“Invalid voucher”] or [valid and discount value for current voucher code for specific customer]
+ - method: GET
+ - URL: http://localhost:5000/api/apply_voucher
+- Parameters: 
+    1. "customer_id": 1,
+    2. "voucher_code": 1130541,
+    3. "order_total_price": 1000
+- return [“Invalid voucher”] or [valid and discount value for current voucher code for specific customer]
 
 2. API for confirm usage and set update (use_date) for Voucher Code (used once) for specific customer if customer used it
-method: PUT
-URL: http://localhost:5000/api/confirm_voucher_usage/+id
-Example: http://localhost:5000/api/confirm_voucher_usage/63a77bcc214c3e4f987ccdee
+ - method: PUT
+- URL: http://localhost:5000/api/confirm_voucher_usage/+id
+- Example: http://localhost:5000/api/confirm_voucher_usage/63a77bcc214c3e4f987ccdee
 
 
 
