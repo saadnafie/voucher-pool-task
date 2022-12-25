@@ -24,18 +24,57 @@ https://www.linkedin.com/in/saadnafie/
 - Code quality, linting, and naming convention.
 
 
-## Steps to run the application:
+# Steps to run the application:
+
 1. download project from github
 2. open terminal and run command > npm install to download node modules and required dependancies (packages)
 3. to start server run command > nodemon index
 4. the server link should be http://localhost:5000/
 5. for running API download postman collection attached here
 
-## Postman collection File
 
+# Postman collection File
 
 [voucher pool.postman_collection.zip](https://github.com/saadnafie/voucher-pool-task/files/10299352/voucher.pool.postman_collection.zip)
 
+
+# API Documnetation
+
+##Admin Part:
+
+1. API enable admin Generate Voucher Code for customer (discount by value or percentage)
+method: POST
+URL: http://localhost:5000/api/voucher
+Parameters:
+    "customer_id": 2,
+    "voucher_type": 1, //1: by percentage, 2: by value
+    "voucher_value": 20,
+    "expiration_date": "02-15-2023"
+
+
+
+2. API show admin all customers with vouchers and date of use
+method: GET
+URL: http://localhost:5000/api/voucher
+return customers with vouchers and date of use
+___________________________________________________________________________________________
+
+##Customer Part:
+
+
+1. API check specific customer voucher Code valid or not and get discount value or percentage
+method: GET
+URL: http://localhost:5000/api/apply_voucher
+Parameters: 
+    "customer_id": 1,
+    "voucher_code": 1130541,
+    "order_total_price": 1000
+return [“Invalid voucher”] or [valid and discount value for current voucher code for specific customer]
+
+2. API for confirm usage and set update (use_date) for Voucher Code (used once) for specific customer if customer used it
+method: PUT
+URL: http://localhost:5000/api/confirm_voucher_usage/+id
+Example: http://localhost:5000/api/confirm_voucher_usage/63a77bcc214c3e4f987ccdee
 
 
 
